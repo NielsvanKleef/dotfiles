@@ -1,0 +1,50 @@
+" Enable system clipboard
+set clipboard=unnamed
+
+" Better command-line completion
+" set wildmenu
+
+" Display line numbers
+" set number
+
+" Enable relative line numbers (optional)
+set relativenumber
+
+" Enable mouse support (not all features work in IdeaVim)
+set mouse=a
+
+" Remap jj to Esc
+inoremap jj <Esc>
+
+" Map Ctrl+j/k to switch between split windows
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
+
+" Use leader key ( first disable space)
+noremap <Space> <Nop>
+let mapleader = " "
+
+" Split window horizontally (new window below) with <Leader>s
+nnoremap <Leader>s :split<CR>
+
+" Split window vertically (new window to the right) with <Leader>v
+nnoremap <Leader>v :vsplit<CR>
+
+" Buffer navigation (if you use multiple tabs/files)
+nmap <Leader>n :tabnext<CR>
+nmap <Leader>p :tabprev<CR>
+
+" Save file
+nmap <Leader>w :w<CR>
+
+" Close file
+nmap <Leader>q :q<CR>
+
+" Custom search and replace using leader
+nmap <Leader>/ :%s//g<Left><Left>
+
+" Yank to system clipboard (use + register)
+vmap <Leader>y "+y
+nmap <Leader>y "+yy
