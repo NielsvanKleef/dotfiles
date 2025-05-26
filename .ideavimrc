@@ -16,11 +16,11 @@ set mouse=a
 " Remap jj to Esc
 inoremap jj <Esc>
 
-" Map Ctrl+j/k to switch between split windows
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-h> <C-w>h
-nnoremap <C-l> <C-w>l
+" Map leader+hjkl to switch between split windows
+" nnoremap <Leader>j <C-w>j
+" nnoremap <Leader>k <C-w>k
+" nnoremap <Leader>h <C-w>h
+" nnoremap <Leader>l <C-w>l
 
 " Use leader key ( first disable space)
 noremap <Space> <Nop>
