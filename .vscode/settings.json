@@ -52,8 +52,8 @@
       "before": ["<leader>", "c", "a"],
       "commands": ["editor.action.quickFix"]
     },
-    { "before": ["leader", "f"], "commands": ["workbench.action.quickOpen"] },
-    { "before": ["leader", "p"], "commands": ["editor.action.formatDocument"] },
+    { "before": ["leader", "p"], "commands": ["workbench.action.quickOpen"] },
+    { "before": ["leader", "f"], "commands": ["editor.action.formatDocument"] },
     {
       "before": ["g", "h"],
       "commands": ["editor.action.showDefinitionPreviewHover"]
@@ -68,5 +68,7 @@
     { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
     // toggle comment selection
     { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] }
-  ]
+  ],
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.minimap.enabled": false
 }
